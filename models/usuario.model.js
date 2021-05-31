@@ -1,13 +1,19 @@
+// ============================== acesso à coleção do mongoDB ==============================
+const mongoose = require('./database');
+const Schema = mongoose.Schema;
 
-var {
-    nome= "",
-    cpf= 0,
-    rg=0,
-    pedidos="",
-    datanacimento=Date,
-    dataentrada=Date,
-    datasaida=Date,
-    historico="",
-    pais_de_origem="",
-    endereco=""
-}
+// ============================== criação do esquema ============================== 
+let UsuarioSchema = new Schema({
+    nome: { type: String, required: true },
+    cpf: { type: Number, required: true, default: 0},
+    rg: { type: Number, required: true, default: 0},
+    datanacismento: { type: Date, required: true, default: 0 },
+    dataentrada: { type: Date, required: true, default: 0 },
+    datasaida: { type: Date, required: true, default: 0 },
+    historico: { type: String },
+    pais_de_origem: { type: String },
+    endereco: { type: String }
+});
+
+// ============================== exportação do modelo ============================== 
+module.exports = mongoose.model('Usuario', UsuarioSchema, 'usuario');
