@@ -3,7 +3,9 @@ const usuario = require('../models/usuario.model');
 class usuarioController {
     async usuario_inserir(req, res) {
         try {
-            return res.status(200).json({ ok: "ok" });
+            const usuario = await Usuario.create(reg. body)
+            if (!usuario) return res.status(406).json({error: 'Erro insere usuario.'})
+            return res.status(200).json(usuario)
         } catch (error) {
             return res.status(400).json(error);
         }
