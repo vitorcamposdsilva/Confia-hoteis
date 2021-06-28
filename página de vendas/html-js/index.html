@@ -24,18 +24,26 @@
             
             {
                 id: 1,
-                nome: 'hotel maluco na praia',
-                Img:'quarto.jpg',
+                nome: 'hotel dog',
+                Img:'quarto dog.jpg',
                 quantidade_de_quartos_vagos: 0
             },
             {
                 id: 2,
-                nome: 'hotel maluco das na mata',
-                Img:'quarto.jpg',
+                nome: 'hotel montanha',
+                Img:'quarto nas montanhas.jpg',
                 quantidade_de_quartos_vagos: 0
             },
 
-        ] 
+        ]
+        inicializarpaginadelocação = () => {
+           var containerProdutos = document.getElementById('produtos');
+           items.map((vaL)=>{
+               console.log(vaL.nome);
+           })
+        }
+
+        inicializarpaginadelocação();
     </script>
 </body>
 </html>
