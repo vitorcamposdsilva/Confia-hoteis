@@ -39,7 +39,13 @@
         inicializarpaginadelocação = () => {
            var containerProdutos = document.getElementById('produtos');
            items.map((vaL)=>{
-               console.log(vaL.nome);
+             containerProdutos.innerHTML+= '
+             <div class="produto-single">
+                <img src="'+vaL.name+'" />
+                <p>'+vaL.nome+'</p>
+                <a key="'+vaL.id+'"href="">Adicionar ao carrinho</a>
+                </div>
+             ';
            })
         }
 
