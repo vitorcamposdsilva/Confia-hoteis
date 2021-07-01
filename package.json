@@ -1,0 +1,20 @@
+{
+  "name": "confia-hoteis",
+  "version": "1.0.0",
+  "description": "Este é um projeto de um site de locação de hotéis malucos",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitorcamposdsilva/Confia-hoteis.git"
+  },
+  "author": "Vitor Campos da Silva, Marcelo Parolim Dias, Julia Bronoski, Vitória Issami Wicher e Caue Sila e Sergio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vitorcamposdsilva/Confia-hoteis/issues"
+  },
+  "homepage": "https://github.com/vitorcamposdsilva/Confia-hoteis#readme"
+}
