@@ -28,8 +28,8 @@ class despesasController {
     async despesas_atualizar(req, res) {
         try {
             return res.status(200).json({ ok: "ok" });
-        } catch {
-            return res.status(400).json(error);
+        } catch 
+            return res.status(400).json(error);;
         }
     }
 
